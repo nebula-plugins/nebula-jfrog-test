@@ -11,5 +11,5 @@ plugins {
 }
 
 rootProject.name = 'nebula-jfrog-test'
-include('app', 'list', 'utilities')
+include 'app', 'list', 'utilities', 'something1', 'something2', 'something3', 'something4', 'something5', 'something6', 'something7'
 

@@ -1,9 +1,9 @@
-name: Nebula Build
+name: Nebula Build Cron
 on:
-  push:
-    branches:
-      - '*'
-      -
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
 jobs:
   publish:
     runs-on: ubuntu-latest
