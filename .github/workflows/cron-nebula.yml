@@ -1,7 +1,7 @@
 name: Nebula Build Cron
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 jobs:
