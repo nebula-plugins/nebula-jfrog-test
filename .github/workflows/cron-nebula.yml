@@ -1,7 +1,7 @@
 name: Nebula Build Cron
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -20,6 +20,7 @@ jobs:
       - uses: actions/cache@v1
         id: gradle-cache
         with:
+          ref: main
           path: ~/.gradle/caches
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/gradle/dependency-locks/*.lockfile') }}
           restore-keys: |
