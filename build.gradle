@@ -51,5 +51,6 @@ gradleEnterprise {
 }
 
 nebulaOssPublishing {
+    netflixOssRepositoryBaseUrl.set 'https://netlfixtest.jfrog.io/artifactory'
     netflixOssRepository.set 'jfrog-test'
 }
